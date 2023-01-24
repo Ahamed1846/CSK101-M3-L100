@@ -1,6 +1,6 @@
 class Blog {
   // Progression 1: Add 2 methods - addTitle(), and addDescription()
-  constuctor(title, detail) {
+  constructor(title, detail) {
     this.title = title;
     this.detail = detail;
   }
@@ -29,6 +29,8 @@ function helperPost() {
   let title = document.getElementById('title');
   let detail = document.getElementById('detail');
   const myBlog = new Blog(title.value, detail.value);
+  myBlog.addTitle();
+  myBlog.addDescription();
   let popup = document.getElementById('popupContact');
   popup.style.display = 'none';
 }
